@@ -78,7 +78,7 @@ namespace Movies.Client
                 .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
                 {                    
-                    options.Authority = "https://localhost:5005";
+                    options.Authority = "https://localhost:5025";
 
                     options.ClientId = "movies_mvc_client";
                     options.ClientSecret = "secret";

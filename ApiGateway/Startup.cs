@@ -25,7 +25,7 @@ namespace ApiGateway
             services.AddAuthentication()
              .AddJwtBearer(authenticationProviderKey, x =>
              {
-                 x.Authority = "https://localhost:5005"; // IDENTITY SERVER URL
+                 x.Authority = "https://localhost:5025"; // IDENTITY SERVER URL
                  //x.RequireHttpsMetadata = false;
                  x.TokenValidationParameters = new TokenValidationParameters
                  {
